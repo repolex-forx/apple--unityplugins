@@ -1742,7 +1742,12 @@
         "blob/a4f9a478b292990e602f60294c892f10ea063e28.nq.gz",
         "blob/d650cc50d8adfd4ca5b649b11d025804de9e7c1c.nq.gz",
         "blob/33e4d70197b581478af5312b760d29a6e6ca734d.nq.gz"
-      ]
+      ],
+      "ast": [
+        "aggregate/ast/ea505d09b8e7791ac3e591de4294ace96f893520"
+      ],
+      "lsp": "aggregate/lsp/ea505d09b8e7791ac3e591de4294ace96f893520.nq.gz",
+      "repolex": "aggregate/repolex/ea505d09b8e7791ac3e591de4294ace96f893520"
     }
   ],
   "commit": "commit/commit.nq.gz",
