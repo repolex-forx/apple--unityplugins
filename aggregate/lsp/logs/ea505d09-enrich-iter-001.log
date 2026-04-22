@@ -1,0 +1,21 @@
+[2026-04-22T01:00:50Z] === ENRICH ITERATION 1 START | repo=apple/unityplugins sha=ea505d09 ===
+[2026-04-22T01:00:50Z] [iter=1] PHASE START: enrich repo=apple/unityplugins sha=ea505d09 runlog=/home/runner/work/forx/forx/storage/aggregate/lsp/logs/ea505d09-enrich-iter-001.log output=/home/runner/work/forx/forx/storage/aggregate/lsp/ea505d09b8e7791ac3e591de4294ace96f893520.nq.gz
+[2026-04-22T01:00:50Z] [iter=1] Step 1: Loading AST into disk-backed store mem_mb=77 MB
+[2026-04-22T01:01:07Z] [iter=1] AST store loaded triples=2003087 load_secs=16 mem_mb=1077 MB
+[2026-04-22T01:01:07Z] [iter=1] Step 2: Finding LSP targets mem_mb=1077 MB
+[2026-04-22T01:01:15Z] [iter=1] LSP targets found call_sites=12345 imports=990 extends=0 implements=0 secs=8
+[2026-04-22T01:01:22Z] [iter=1] Step 2.7: Building position index (one-shot, shared across resolvers) mem_mb=1077 MB
+[2026-04-22T01:01:32Z] [iter=1] Position index built positions=141782 nodes_with_types=170035 secs=10 mem_mb=1077 MB
+[2026-04-22T01:01:32Z] [iter=1] Step 3: Starting LSP resolution mem_mb=1077 MB already_completed_types=[] already_completed_files=0
+[2026-04-22T01:01:32Z] [iter=1] Resolving target type target_type=call_site count=12345
+[2026-04-22T01:01:33Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=0.7 files_done=0 resolved=0 errors=12345 current=scripts/python/upi_unity_native_plugin_manager.py
+[2026-04-22T01:03:47Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=2.9 files_done=1 resolved=49 errors=12549 current=build.py
+[2026-04-22T01:05:15Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=4.4 files_done=2 resolved=70 errors=12683 current=scripts/python/upi_utility.py
+[2026-04-22T01:06:09Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=5.3 files_done=4 resolved=101 errors=12767 current=scripts/python/upi_build_context.py
+[2026-04-22T01:06:49Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=6.0 files_done=6 resolved=109 errors=25168 current=plug-ins/Apple.PHASE/Native/Spatializer/AudioPluginUtil.cpp
+[2026-04-22T01:06:59Z] [iter=1] Target type resolved target_type=call_site resolved=122 errors=25183 secs=327 mem_mb=1077 MB
+[2026-04-22T01:06:59Z] [iter=1] Resolving target type target_type=import_statement count=990
+[2026-04-22T01:07:02Z] [iter=1] Target type resolved target_type=import_statement resolved=19 errors=1980 secs=3 mem_mb=1077 MB
+[2026-04-22T01:07:04Z] [iter=1] Step 5: Writing final enrichment file triples=7598
+[2026-04-22T01:07:04Z] [iter=1] Enrichment file written path=/home/runner/work/forx/forx/storage/aggregate/lsp/ea505d09b8e7791ac3e591de4294ace96f893520.nq.gz size_kb=152
+[2026-04-22T01:07:04Z] [iter=1] PHASE END: enrich elapsed_s=374 elapsed_min=6.2 total_triples=7598
